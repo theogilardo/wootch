@@ -509,12 +509,6 @@ main {
     @media (max-width: 37.5em) {
       .history__video {
         display: none; } }
-    @media (max-width: 56.25em) {
-      .history__video {
-        display: none; } }
-    @media (max-width: 65em) {
-      .history__video {
-        display: none; } }
   .history__photo--mobile {
     width: 100%;
     height: 100%;
@@ -525,11 +519,5 @@ main {
       .history__photo--mobile {
         display: block; } }
     @media (max-width: 37.5em) {
-      .history__photo--mobile {
-        display: block; } }
-    @media (max-width: 56.25em) {
-      .history__photo--mobile {
-        display: block; } }
-    @media (max-width: 65em) {
       .history__photo--mobile {
         display: block; } }
