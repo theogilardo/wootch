@@ -74,6 +74,10 @@ body {
     background-color: #EEEEEE66;
     border: 1px solid white;
     cursor: pointer; }
+    @media (max-width: 45em) {
+      .slider__circle {
+        width: 3rem;
+        height: 3rem; } }
 
 .black {
   background-color: #33333399; }
@@ -321,6 +325,9 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%; }
+  @media (max-width: 45em) {
+    .tree {
+      background-position: 0 154px; } }
   .tree__container {
     object-fit: cover;
     display: flex;
@@ -399,6 +406,9 @@ nav {
 i {
   color: white;
   font-size: 1.5rem; }
+  @media (max-width: 45em) {
+    i {
+      font-size: 2.3rem; } }
 
 main {
   height: 100%;

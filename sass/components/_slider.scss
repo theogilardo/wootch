@@ -17,6 +17,12 @@
     background-color: #EEEEEE66;
     border: 1px solid white;
     cursor: pointer;
+
+
+    @include respond(phone) {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 }
 
