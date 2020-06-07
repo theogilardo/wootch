@@ -229,7 +229,7 @@ body {
     @media (max-width: 37.5em) {
       .collection__men {
         clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); } }
-    @media (max-width: 16.125em) {
+    @media (max-width: 23.125em) {
       .collection__men {
         clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); } }
     .collection__men:hover {
@@ -266,7 +266,7 @@ body {
       @media (max-width: 37.5em) {
         .collection__men__photo {
           background-image: url("../img/man-model-phone.png"); } }
-      @media (max-width: 16.125em) {
+      @media (max-width: 23.125em) {
         .collection__men__photo {
           background-image: url("../img/man-model-phone.png"); } }
     .collection__men h2 {
@@ -286,7 +286,7 @@ body {
         .collection__men h2 {
           right: 5%;
           text-align: right; } }
-      @media (max-width: 16.125em) {
+      @media (max-width: 23.125em) {
         .collection__men h2 {
           right: 5%;
           text-align: right; } }
@@ -304,7 +304,7 @@ body {
     @media (max-width: 37.5em) {
       .collection__women {
         clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%); } }
-    @media (max-width: 16.125em) {
+    @media (max-width: 23.125em) {
       .collection__women {
         clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%); } }
     .collection__women:hover {
@@ -347,7 +347,7 @@ body {
           background-image: url("../img/woman-model-phone.png");
           background-position: -100px 190px;
           height: 100%; } }
-      @media (max-width: 16.125em) {
+      @media (max-width: 23.125em) {
         .collection__women__photo {
           background-image: url("../img/woman-model-phone.png");
           background-position: -100px 190px;
@@ -369,7 +369,7 @@ body {
         .collection__women h2 {
           left: 5%;
           text-align: left; } }
-      @media (max-width: 16.125em) {
+      @media (max-width: 23.125em) {
         .collection__women h2 {
           left: 5%;
           text-align: left; } }
@@ -547,7 +547,7 @@ main {
     height: 100%;
     object-fit: cover;
     align-self: flex-end; }
-    @media (max-width: 16.125em) {
+    @media (max-width: 23.125em) {
       .history__video {
         display: none; } }
     @media (max-width: 37.5em) {
@@ -559,7 +559,7 @@ main {
     object-fit: cover;
     align-self: flex-end;
     display: none; }
-    @media (max-width: 16.125em) {
+    @media (max-width: 23.125em) {
       .history__photo--mobile {
         display: block; } }
     @media (max-width: 37.5em) {
