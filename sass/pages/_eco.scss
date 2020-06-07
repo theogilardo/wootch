@@ -22,12 +22,20 @@
       font-size: 4rem;
       text-transform: uppercase;
       margin-bottom: 2rem;
+
+      @include respond(phone) {
+        font-size: 3rem;
+      }
     }
 
     p {
       padding: 1rem 15rem;
       font-size: 1.4rem;
       margin: 1.5rem;
+
+      @include respond(phone) {
+        padding: 1rem 5rem;
+      }
     }
   }
 }

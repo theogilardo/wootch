@@ -18,15 +18,7 @@
       z-index: 2000;
       transition: all 1s;
 
-      @include respond(tab-port) {
-        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-      }
-
       @include respond(phone) {
-        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
-      }
-
-      @include respond(small-phone) {
         clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
       }
 
@@ -67,10 +59,6 @@
           width: 100%;
           height: 100%;
 
-          @include respond(tab-port) {
-            background-image: url('../img/man-model-phone.png');
-          }
-
           @include respond(phone) {
             background-image: url('../img/man-model-phone.png');
           }
@@ -91,17 +79,7 @@
         text-align: left;
         z-index: 4500;
 
-        @include respond(tab-port) {
-          right: 5%;
-          text-align: right;
-        }
-
         @include respond(phone) {
-          right: 5%;
-          text-align: right;
-        }
-
-        @include respond(small-phone) {
           right: 5%;
           text-align: right;
         }
@@ -118,15 +96,7 @@
       clip-path: polygon(100% 0, 40% 0, 60% 100%, 100% 100%);
       transition: all 1s;
 
-      @include respond(tab-port) {
-        clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
-      }
-
       @include respond(phone) {
-        clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
-      }
-
-      @include respond(small-phone) {
         clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
       }
 
@@ -169,12 +139,6 @@
           width: 100%;
           height: 125%;
 
-          @include respond(tab-port) {
-            background-image: url('../img/woman-model-phone.png');
-            background-position: -100px 190px;
-            height: 100%;
-          }
-
           @include respond(phone) {
             background-image: url('../img/woman-model-phone.png');
             background-position: -100px 190px;
@@ -198,17 +162,7 @@
         text-align: right;
         z-index: 4500;
 
-        @include respond(tab-port) {
-          left: 5%;
-          text-align: left;
-        }
-
         @include respond(phone) {
-          left: 5%;
-          text-align: left;
-        }
-
-        @include respond(small-phone) {
           left: 5%;
           text-align: left;
         }
