@@ -223,6 +223,9 @@ body {
     clip-path: polygon(0 0, 41% 0, 61% 100%, 0% 100%);
     z-index: 2000;
     transition: all 1s; }
+    @media (max-width: 45em) {
+      .collection__men {
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); } }
     .collection__men:hover {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
     .collection__men__button {
@@ -251,6 +254,9 @@ body {
       object-fit: cover;
       width: 100%;
       height: 100%; }
+      @media (max-width: 45em) {
+        .collection__men__photo {
+          background-image: url("../img/man-model-phone.png"); } }
     .collection__men h2 {
       position: absolute;
       top: 10%;
@@ -260,6 +266,10 @@ body {
       font-size: 2.8rem;
       text-align: left;
       z-index: 4500; }
+      @media (max-width: 45em) {
+        .collection__men h2 {
+          right: 5%;
+          text-align: right; } }
   .collection__women {
     position: absolute;
     top: 0;
@@ -268,6 +278,9 @@ body {
     height: 100%;
     clip-path: polygon(100% 0, 40% 0, 60% 100%, 100% 100%);
     transition: all 1s; }
+    @media (max-width: 45em) {
+      .collection__women {
+        clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%); } }
     .collection__women:hover {
       z-index: 2100;
       clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); }
@@ -298,6 +311,11 @@ body {
       object-fit: cover;
       width: 100%;
       height: 125%; }
+      @media (max-width: 45em) {
+        .collection__women__photo {
+          background-image: url("../img/woman-model-phone.png");
+          background-position: -100px 190px;
+          height: 100%; } }
     .collection__women h2 {
       position: absolute;
       bottom: 10%;
@@ -307,6 +325,10 @@ body {
       font-size: 2.8rem;
       text-align: right;
       z-index: 4500; }
+      @media (max-width: 45em) {
+        .collection__women h2 {
+          left: 5%;
+          text-align: left; } }
 
 .photo {
   background-size: cover;
