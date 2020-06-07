@@ -523,7 +523,7 @@ main {
     height: 100%;
     object-fit: cover;
     align-self: flex-end; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .history__video {
         display: none; } }
   .history__photo--mobile {
@@ -532,6 +532,6 @@ main {
     object-fit: cover;
     align-self: flex-end;
     display: none; }
-    @media (max-width: 37.5em) {
+    @media (max-width: 56.25em) {
       .history__photo--mobile {
         display: block; } }

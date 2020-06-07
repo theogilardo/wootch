@@ -61,7 +61,7 @@
     object-fit: cover;
     align-self: flex-end;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       display: none;
     }
   }
@@ -73,7 +73,7 @@
     align-self: flex-end;
     display: none;
 
-    @include respond(phone) {
+    @include respond(tab-port) {
       display: block;
     }
 
