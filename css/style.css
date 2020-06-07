@@ -392,6 +392,9 @@ body {
     text-transform: uppercase;
     letter-spacing: .3rem;
     font-size: 1.2rem; }
+    @media (max-width: 56.25em) {
+      .footer__text {
+        font-size: .8rem; } }
   .footer__social-networks {
     display: flex;
     align-items: center; }
@@ -400,6 +403,9 @@ body {
   .footer__icon {
     color: #eee;
     font-size: 2rem; }
+    @media (max-width: 56.25em) {
+      .footer__icon {
+        font-size: 1.4rem; } }
 
 header {
   height: 100vh;

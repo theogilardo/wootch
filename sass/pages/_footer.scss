@@ -11,6 +11,10 @@
         text-transform: uppercase;
         letter-spacing: .3rem;
         font-size: 1.2rem;
+
+        @include respond(tab-port) {
+          font-size: .8rem;
+        }
     }
 
     &__social-networks {
@@ -27,5 +31,9 @@
     &__icon {
         color: #eee;
         font-size: 2rem;
+
+        @include respond(tab-port) {
+          font-size: 1.4rem;
+        }
     }
  }
