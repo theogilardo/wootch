@@ -19,6 +19,11 @@
     background: #33333366;
     padding: 4rem;
 
+    @include respond(phone) {
+      clip-path: polygon(0 100%, 100% 100%, 60% 0, 0 0);
+      width: 100%;
+    }
+
     h1 {
       font-size: 4rem;
       padding-bottom: 3rem;
@@ -42,11 +47,28 @@
     }
   }
 
-  &__video--1 {
+  &__video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     align-self: flex-end;
+
+    @include respond(phone) {
+      display: none;
+    }
   }
 
+  &__photo--mobile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-self: flex-end;
+    display: none;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
 }
+
+
