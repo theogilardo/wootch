@@ -22,6 +22,10 @@
         clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
       }
 
+      @include respond(small-phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+      }
+
       &:hover {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       }
@@ -62,6 +66,11 @@
           @include respond(phone) {
             background-image: url('../img/man-model-phone.png');
           }
+
+          @include respond(small-phone) {
+            background-image: url('../img/man-model-phone.png');
+          }
+
    }
 
     h2 {
@@ -75,6 +84,11 @@
         z-index: 4500;
 
         @include respond(phone) {
+          right: 5%;
+          text-align: right;
+        }
+
+        @include respond(small-phone) {
           right: 5%;
           text-align: right;
         }
@@ -92,6 +106,10 @@
       transition: all 1s;
 
       @include respond(phone) {
+        clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
+      }
+
+      @include respond(small-phone) {
         clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
       }
 
@@ -139,6 +157,12 @@
             background-position: -100px 190px;
             height: 100%;
           }
+
+          @include respond(small-phone) {
+            background-image: url('../img/woman-model-phone.png');
+            background-position: -100px 190px;
+            height: 100%;
+          }
    }
 
     h2 {
@@ -152,6 +176,11 @@
         z-index: 4500;
 
         @include respond(phone) {
+          left: 5%;
+          text-align: left;
+        }
+
+        @include respond(small-phone) {
           left: 5%;
           text-align: left;
         }
