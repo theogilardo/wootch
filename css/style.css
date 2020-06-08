@@ -176,6 +176,9 @@ body {
     z-index: 10;
     margin: 0 3rem;
     transition: all .4s; }
+    @media (max-width: 37.5em) {
+      .bestsellers__watch {
+        margin-top: 1.5rem; } }
     .bestsellers__watch:after {
       content: "";
       position: absolute;
@@ -367,7 +370,8 @@ body {
   height: 100%; }
   @media (max-width: 37.5em) {
     .tree {
-      background-position: 0 154px; } }
+      background-position: 0 154px;
+      padding: 8rem 0; } }
   .tree__container {
     object-fit: cover;
     display: flex;

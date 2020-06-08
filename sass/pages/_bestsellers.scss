@@ -118,6 +118,10 @@
     margin: 0 3rem;
     transition: all .4s;
 
+    @include respond(phone) {
+      margin-top: 1.5rem;
+    }
+
     &:after {
       content: "";
       position: absolute;
