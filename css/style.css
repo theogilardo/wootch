@@ -290,6 +290,7 @@ body {
       @media (max-width: 37.5em) {
         .collection__men h2 {
           right: 5%;
+          top: 65%;
           text-align: right; } }
   .collection__women {
     position: absolute;

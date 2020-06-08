@@ -27,7 +27,6 @@
       @include respond(phone) {
         position: relative;
         grid-row: 1 / 2;
-        // clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       }
 
@@ -64,12 +63,6 @@
         }
       }
 
-      // &:hover &__button {
-      //   opacity: 1;
-      //   left: 50%;
-      //   transform: translate(-50%, -50%);
-      // }
-
       &__photo {
           background-image: url('../img/man-posing4.jpg');
           background-size: cover;
@@ -81,7 +74,6 @@
           @include respond(phone) {
             background-image: url('../img/man-model-phone.png');
           }
-
    }
 
     h2 {
@@ -96,6 +88,7 @@
 
         @include respond(phone) {
           right: 5%;
+          top: 65%;
           text-align: right;
         }
     }
@@ -114,7 +107,6 @@
       @include respond(phone) {
         position: relative;
         grid-row: 2 / 3;
-        // clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
         clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
       }
 
@@ -164,7 +156,6 @@
 
           @include respond(phone) {
             background-image: url('../img/woman-model-phone.png');
-            // background-position: -100px 190px;
             height: 100%;
           }
    }
