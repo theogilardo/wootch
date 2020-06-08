@@ -96,6 +96,7 @@ body {
   padding: 7rem 0;
   position: relative;
   color: white;
+  overflow-y: hidden;
   background-image: url("../img/leaves2.jpg");
   z-index: 0;
   background-size: cover;
