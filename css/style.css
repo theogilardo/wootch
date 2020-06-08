@@ -245,9 +245,8 @@ body {
         position: relative;
         grid-row: 1 / 2;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); } }
-    @media (min-width: 112.5em) {
-      .collection__men:hover {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); } }
+    .collection__men:hover {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
     .collection__men__button {
       position: absolute;
       top: 50%;
@@ -263,11 +262,10 @@ body {
         background-color: white;
         color: #333;
         border: none; }
-    @media (min-width: 112.5em) {
-      .collection__men:hover {
-        opacity: 1;
-        left: 50%;
-        transform: translate(-50%, -50%); } }
+    .collection__men:hover .collection__men__button {
+      opacity: 1;
+      left: 50%;
+      transform: translate(-50%, -50%); }
     .collection__men__photo {
       background-image: url("../img/man-posing4.jpg");
       background-size: cover;
@@ -305,10 +303,9 @@ body {
         position: relative;
         grid-row: 2 / 3;
         clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); } }
-    @media (min-width: 112.5em) {
-      .collection__women:hover {
-        z-index: 2100;
-        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); } }
+    .collection__women:hover {
+      z-index: 2100;
+      clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); }
     .collection__women__button {
       position: absolute;
       bottom: 50%;
@@ -325,11 +322,10 @@ body {
         background-color: white;
         color: #333;
         border: none; }
-    @media (min-width: 112.5em) {
-      .collection__women:hover {
-        opacity: 1;
-        right: 50%;
-        transform: translate(-50%, -50%); } }
+    .collection__women:hover .collection__women__button {
+      opacity: 1;
+      right: 50%;
+      transform: translate(50%, 50%); }
     .collection__women__photo {
       background-image: url("../img/woman-posing6.jpg");
       background-size: cover;

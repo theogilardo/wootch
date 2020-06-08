@@ -30,11 +30,9 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       }
 
-      @include respond(big-desktop) {
-        &:hover {
+       &:hover {
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
-      }
+       }
 
       &__button {
         position: absolute;
@@ -52,15 +50,14 @@
           background-color: white;
           color: #333;
           border: none;
+
         }
       }
 
-      @include respond(big-desktop) {
-        &:hover {
-          opacity: 1;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
+      &:hover .collection__men__button {
+        opacity: 1;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
 
       &__photo {
@@ -110,11 +107,9 @@
         clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
       }
 
-      @include respond(big-desktop) {
-        &:hover {
-          z-index: 2100;
-          clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
-        }
+      &:hover {
+        z-index: 2100;
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
       }
 
       &__button {
@@ -137,14 +132,11 @@
         }
       }
 
-      @include respond(big-desktop) {
-        &:hover {
-          opacity: 1;
-          right: 50%;
-          transform: translate(-50%, -50%);
-        }
+      &:hover .collection__women__button {
+        opacity: 1;
+        right: 50%;
+        transform: translate(50%, 50%);
       }
-
 
       &__photo {
           background-image: url('../img/woman-posing6.jpg');
