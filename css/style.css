@@ -41,6 +41,9 @@ body {
   flex-direction: column;
   transform: translateX(-200%);
   transition: transform .5s ease-out; }
+  @media (max-width: 37.5em) {
+    .menu {
+      width: 50%; } }
   .menu__list a {
     display: block;
     padding: .5rem;
