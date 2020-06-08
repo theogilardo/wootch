@@ -6,6 +6,12 @@
       width: 100%;
       height: 55rem;
       position: relative;
+
+      @include respond(phone) {
+        display: grid;
+        grid-template-column: 1fr;
+        grid-template-row: 2fr;
+      }
   }
 
   &__men {
@@ -19,7 +25,10 @@
       transition: all 1s;
 
       @include respond(phone) {
-        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+        position: relative;
+        grid-row: 1 / 2;
+        // clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       }
 
       @include respond(big-desktop) {
@@ -103,7 +112,10 @@
       transition: all 1s;
 
       @include respond(phone) {
-        clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
+        position: relative;
+        grid-row: 2 / 3;
+        // clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
       }
 
       @include respond(big-desktop) {
@@ -152,13 +164,7 @@
 
           @include respond(phone) {
             background-image: url('../img/woman-model-phone.png');
-            background-position: -100px 190px;
-            height: 100%;
-          }
-
-          @include respond(small-phone) {
-            background-image: url('../img/woman-model-phone.png');
-            background-position: -100px 190px;
+            // background-position: -100px 190px;
             height: 100%;
           }
    }
