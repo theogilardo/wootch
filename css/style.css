@@ -226,8 +226,9 @@ body {
     @media (max-width: 37.5em) {
       .collection__men {
         clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); } }
-    .collection__men:hover {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+    @media (min-width: 112.5em) {
+      .collection__men:hover {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); } }
     .collection__men__button {
       position: absolute;
       top: 50%;
@@ -243,10 +244,11 @@ body {
         background-color: white;
         color: #333;
         border: none; }
-    .collection__men:hover .collection__men__button {
-      opacity: 1;
-      left: 50%;
-      transform: translate(-50%, -50%); }
+    @media (min-width: 112.5em) {
+      .collection__men:hover {
+        opacity: 1;
+        left: 50%;
+        transform: translate(-50%, -50%); } }
     .collection__men__photo {
       background-image: url("../img/man-posing4.jpg");
       background-size: cover;
@@ -255,9 +257,6 @@ body {
       width: 100%;
       height: 100%; }
       @media (max-width: 37.5em) {
-        .collection__men__photo {
-          background-image: url("../img/man-model-phone.png"); } }
-      @media (max-width: 23.125em) {
         .collection__men__photo {
           background-image: url("../img/man-model-phone.png"); } }
     .collection__men h2 {
@@ -284,9 +283,10 @@ body {
     @media (max-width: 37.5em) {
       .collection__women {
         clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%); } }
-    .collection__women:hover {
-      z-index: 2100;
-      clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); }
+    @media (min-width: 112.5em) {
+      .collection__women:hover {
+        z-index: 2100;
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%); } }
     .collection__women__button {
       position: absolute;
       bottom: 50%;
@@ -303,10 +303,11 @@ body {
         background-color: white;
         color: #333;
         border: none; }
-    .collection__women:hover .collection__women__button {
-      opacity: 1;
-      right: 50%;
-      transform: translate(50%, 50%); }
+    @media (min-width: 112.5em) {
+      .collection__women:hover {
+        opacity: 1;
+        right: 50%;
+        transform: translate(-50%, -50%); } }
     .collection__women__photo {
       background-image: url("../img/woman-posing6.jpg");
       background-size: cover;
@@ -427,7 +428,11 @@ nav {
   z-index: 100000; }
   nav a {
     padding: 2rem; }
+    @media (max-width: 37.5em) {
+      nav a {
+        padding: 1rem; } }
     nav a:first-child {
+      padding: 2rem;
       margin-right: auto; }
   nav div {
     padding-right: 2rem; }
@@ -450,7 +455,7 @@ i {
   font-size: 1.5rem; }
   @media (max-width: 37.5em) {
     i {
-      font-size: 2.3rem; } }
+      font-size: 2rem; } }
 
 main {
   height: 100%;
@@ -477,6 +482,9 @@ main {
     .header__new-product--text h1 {
       font-size: 6rem;
       font-family: 'Permanent Marker', cursive; }
+      @media (max-width: 37.5em) {
+        .header__new-product--text h1 {
+          font-size: 5rem; } }
     .header__new-product--text button {
       margin-top: 2rem; }
 

@@ -22,8 +22,10 @@
         clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
       }
 
-      &:hover {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      @include respond(big-desktop) {
+        &:hover {
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
       }
 
       &__button {
@@ -45,11 +47,19 @@
         }
       }
 
-      &:hover &__button {
-        opacity: 1;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      @include respond(big-desktop) {
+        &:hover {
+          opacity: 1;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
+
+      // &:hover &__button {
+      //   opacity: 1;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+      // }
 
       &__photo {
           background-image: url('../img/man-posing4.jpg');
@@ -60,10 +70,6 @@
           height: 100%;
 
           @include respond(phone) {
-            background-image: url('../img/man-model-phone.png');
-          }
-
-          @include respond(small-phone) {
             background-image: url('../img/man-model-phone.png');
           }
 
@@ -100,9 +106,11 @@
         clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 50%);
       }
 
-      &:hover {
-        z-index: 2100;
-        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+      @include respond(big-desktop) {
+        &:hover {
+          z-index: 2100;
+          clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+        }
       }
 
       &__button {
@@ -125,11 +133,14 @@
         }
       }
 
-      &:hover &__button {
-        opacity: 1;
-        right: 50%;
-        transform: translate(50%, 50%);
+      @include respond(big-desktop) {
+        &:hover {
+          opacity: 1;
+          right: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
+
 
       &__photo {
           background-image: url('../img/woman-posing6.jpg');
